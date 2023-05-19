@@ -7,6 +7,7 @@ import { app, database } from './firebaseConfig';
 function App() {
   return (
     <Routes>
+      
       <Route path="/" element={<Docs database={database} />} />
       <Route path="/editDocs/:id" element={<EditDocs database={database}/>} />
     </Routes>
